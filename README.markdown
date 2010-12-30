@@ -1,4 +1,4 @@
-# classified 
+# classified - classifier abstraction and comparison framework
 
 ## Description
 
