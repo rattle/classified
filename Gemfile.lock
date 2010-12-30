@@ -1,0 +1,31 @@
+GIT
+  remote: git://github.com/rjlee/ankusa.git
+  revision: 73e303ce5385ceebd82290198f4b671e18719b6b
+  specs:
+    ankusa (0.0.6)
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    fast-stemmer (1.0.0)
+    git (1.2.5)
+    jeweler (1.5.2)
+      bundler (~> 1.0.0)
+      git (>= 1.2.5)
+      rake
+    libarchive (0.1.2)
+    rake (0.8.7)
+    rcov (0.9.9)
+    shoulda (2.11.3)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  ankusa (= 0.0.6)!
+  bundler (~> 1.0.0)
+  fast-stemmer
+  jeweler (~> 1.5.2)
+  libarchive
+  rcov
+  shoulda
