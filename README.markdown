@@ -1,16 +1,15 @@
-# classified - ruby classifier precision and recall comparison
+# classified 
 
 ## Description:
 
-classified allows comparisons of ruby binary classifiers
+classified provides an abstract interface to common ruby classifiers.  It allows comparison of these classifiers using common corpora to compare accuracy, precison, recall and f-measure metrics.
 
 ## Installation
 
     gem install classified
     bundle install
 
-NOTE: You will need to have installed the libarchive library to support the
-decompression of the corpora used in the comparisons.
+NOTE: You will need to have installed the libarchive library to support the decompression of the corpora used in the comparisons.
 
 ## Usage:
 
