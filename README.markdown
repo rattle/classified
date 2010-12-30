@@ -1,6 +1,6 @@
 # classified 
 
-## Description:
+## Description
 
 classified provides an abstract interface to common ruby classifiers.  It allows comparison of these classifiers using common corpora to compare accuracy, precison, recall and f-measure metrics.
 
