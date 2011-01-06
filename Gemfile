@@ -5,7 +5,9 @@ source "http://rubygems.org"
 
 #gem "ankusa"
 gem "ankusa", "0.0.6", :git => 'git://github.com/rjlee/ankusa.git'
-gem "fast-stemmer"
+gem "hoatzin", "0.1.0"
+gem "classifier"
+gem "json"
 
 # Add dependencies to develop your gem here.
 # Include everything needed to run rake, tests, features, etc.

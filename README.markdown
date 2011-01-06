@@ -2,7 +2,7 @@
 
 ## Description
 
-classified provides an abstract interface to common ruby classifiers.  It allows comparison of these classifiers using common corpora to compare accuracy, precison, recall and f-measure metrics.
+classified provides an abstract interface to common ruby classifiers.  It allows comparison of these classifiers using common corpora to compare accuracy, precision, recall and f-measure metrics.
 
 ## Installation
 
@@ -13,11 +13,13 @@ NOTE: You will need to have installed the libarchive library to support the deco
 
 ## Usage:
 
-    bundle exec rake classified:metrics:all
+    bundle exec rake metrics:all
 
 ## Supported classifiers
 
 * ankusa - https://github.com/livingsocial/ankusa
+* hoatzin - https://github.com/rattle/hoatzin
+* classifier (bayes + lsi) - https://github.com/cardmagic/classifier
 
 ## Analysis
 

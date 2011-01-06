@@ -5,16 +5,15 @@ module Classified
   class Ankusa < Base
     attr_accessor :classifier
     def initialize options = {}
-      storage = nil
       case options.delete(:storage)
       when :memory
-        storage = ::Ankusa::MemoryStorage.new
+        @storage = ::Ankusa::MemoryStorage.new
       when :file
-        storage = ::Ankusa::FileSystemStorage.new options.delete(:file)
+        @storage = ::Ankusa::FileSystemStorage.new options.delete(:file)
       else
-        storage = ::Ankusa::MemoryStorage.new
+        @storage = ::Ankusa::MemoryStorage.new
       end
-      @classifier = ::Ankusa::NaiveBayesClassifier.new storage
+      @classifier = ::Ankusa::NaiveBayesClassifier.new @storage
     end
 
     def train classification, text
@@ -31,7 +30,7 @@ module Classified
 
     def save
       # TODO: confirm this is a support method for the classifier
-      @classifications.save
+      @storage.save
     end
   end
 end

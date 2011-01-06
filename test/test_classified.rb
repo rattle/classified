@@ -6,23 +6,23 @@ class TestClassified < Test::Unit::TestCase
   context "With the default ankusa classifier" do
 
     setup do
-      @c = Classified::Classifier.create(:storage => :memory)
+      @c = Classified::Classifiers.create(:storage => :memory)
     end
 
     should "support training and classification" do
-      assert_equal @c.train(:positive, "Thats nice"), {:nice => 1}
-      assert_equal @c.classify("Thats nice"), :positive
+      assert_equal Hash[:nice, 1], @c.train(:positive, "Thats nice")
+      assert_equal :positive, @c.classify("Thats nice")
     end
 
     context "with a trained moview review corpus" do
 
       setup do 
-        corpus = Classified::Corpus.load_movie_reviews
-        Classified::Corpus.train_classifier @c, corpus[:training]
+        corpus = Classified::Corpus::Utils.load_movie_reviews
+        Classified::Metrics.train_classifier @c, corpus[:training]
       end
 
       should "correctly classify text" do
-        assert_equal @c.classify("It was rubbish"), :negative
+        assert_equal :negative, @c.classify("It was rubbish")
       end
 
     end
