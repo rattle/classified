@@ -1,4 +1,4 @@
-require 'classifier'
+require 'classifier' if Gem.available?('classifier')
 
 module Classified
   class ClassifierLSI < Base

@@ -3,12 +3,6 @@ source "http://rubygems.org"
 # Example:
 #   gem "activesupport", ">= 2.3.5"
 
-#gem "ankusa"
-gem "ankusa", "0.0.6", :git => 'git://github.com/rjlee/ankusa.git'
-gem "hoatzin", "0.1.0"
-gem "classifier"
-gem "json"
-gem 'libarchive'
 
 # Add dependencies to develop your gem here.
 # Include everything needed to run rake, tests, features, etc.
@@ -20,4 +14,14 @@ group :development do
 end
 
 group :test do
+  gem "libarchive"
+  gem "ankusa"
 end
+
+group :metrics do
+  gem "libarchive"
+  gem "ankusa"
+  gem "hoatzin", "0.1.0"
+  gem "classifier"
+end
+

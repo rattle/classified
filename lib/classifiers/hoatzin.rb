@@ -1,4 +1,4 @@
-require 'hoatzin'
+require 'hoatzin' if Gem.available?('hoatzin')
 
 module Classified
   class Hoatzin < Base

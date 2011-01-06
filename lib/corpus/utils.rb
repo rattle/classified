@@ -1,4 +1,4 @@
-require 'libarchive'
+require 'libarchive' if Gem.available?('libarchive')
 
 module Classified
   module Corpus

@@ -1,6 +1,7 @@
 require 'pp'
 require 'rubygems'
 require 'rake'
+Bundler.require(:default, :metrics)
 $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..' ))
 require 'classified'
 include Classified

@@ -1,5 +1,7 @@
-require 'ankusa'
-require 'ankusa/file_system_storage'
+if Gem.available?('ankusa')
+  require 'ankusa'
+  require 'ankusa/file_system_storage'
+end
 
 module Classified
   class Ankusa < Base
