@@ -16,11 +16,11 @@ Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
   gem.name = "classified"
   gem.homepage = "http://github.com/rjlee/classified"
-  gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
-  gem.email = "robl@monkeyhelper.com"
-  gem.authors = ["robl"]
+  gem.license = "GPLv3"
+  gem.summary = %Q{classifier abstraction and comparison framework}
+  gem.description = %Q{classified provides an abstract interface to common ruby classifiers.  It allows comparison of these classifiers using common corpora to compare accuracy, precision, recall and f-measure metrics.}
+  gem.email = "robl[at]rjlee.net"
+  gem.authors = ["Rob Lee"]
   # Include your dependencies below. Runtime dependencies are required when using your gem,
   # and development dependencies are only needed for development (ie running rake tasks, tests, etc)
   #  gem.add_runtime_dependency 'jabber4r', '> 0.1'
