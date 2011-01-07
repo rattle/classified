@@ -50,10 +50,10 @@ module Classified
         movie_review
       end
 
-      def self.load_twitter_sentiment()
+      def self.load_twitter_sentiment(file)
         docs = []
         classification_count = { :positive => 0, :negative => 0 }
-        File.open( Twitter.filename ) do |yf|
+        File.open( file ) do |yf|
           YAML.load_documents( yf ) do |status|
             docs << { :text => status[:text], :classification => status[:classification] }
             classification_count[status[:classification]] +=1
