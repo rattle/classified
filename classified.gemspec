@@ -8,9 +8,9 @@ Gem::Specification.new do |s|
   s.version = "0.0.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["robl"]
+  s.authors = ["Rob Lee"]
   s.date = %q{2011-01-07}
-  s.description = %q{TODO: longer description of your gem}
+  s.description = %q{classified provides an abstract interface to common ruby classifiers.  It allows comparison of these classifiers using common corpora to compare accuracy, precision, recall and f-measure metrics.}
   s.email = %q{robl[at]rjlee.net}
   s.extra_rdoc_files = [
     "LICENSE.txt",
@@ -23,6 +23,7 @@ Gem::Specification.new do |s|
     "README.markdown",
     "Rakefile",
     "VERSION",
+    "classified.gemspec",
     "lib/classified.rb",
     "lib/classifiers/ankusa.rb",
     "lib/classifiers/base.rb",
@@ -37,10 +38,10 @@ Gem::Specification.new do |s|
     "test/test_classified.rb"
   ]
   s.homepage = %q{http://github.com/rjlee/classified}
-  s.licenses = ["MIT"]
+  s.licenses = ["GPLv3"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.7}
-  s.summary = %q{TODO: one-line summary of your gem}
+  s.summary = %q{classifier abstraction and comparison framework}
   s.test_files = [
     "test/helper.rb",
     "test/test_classified.rb"
